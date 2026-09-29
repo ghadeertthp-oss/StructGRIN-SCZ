@@ -14,7 +14,7 @@ st.markdown("Interactive tool for analyzing structural vulnerability and clinica
 # Load data safely
 data_path = "06_results/final_svi_output.csv"
 if os.path.exists(data_path):
-    data_path = "final_svi_output.csv
+    data_path = "final_svi_output.csv"
     
     st.sidebar.header("Filter Options")
     selected_distance = st.sidebar.selectbox("Select Neighborhood Distance (Å):", [6, 8, 10])
