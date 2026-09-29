@@ -12,9 +12,9 @@ st.title("🧬 StructGRIN-SCZ: Structural Vulnerability Index (SVI) Dashboard")
 st.markdown("Interactive tool for analyzing structural vulnerability and clinical phenotypes of protein variants.")
 
 # Load data safely
-data_path = "06_results/final_svi_output.csv"
+data_path = "final_svi_output.csv"
 if os.path.exists(data_path):
-    data_path = "final_svi_output.csv"
+    df = pd.read_csv(data_path)
     
     st.sidebar.header("Filter Options")
     selected_distance = st.sidebar.selectbox("Select Neighborhood Distance (Å):", [6, 8, 10])
